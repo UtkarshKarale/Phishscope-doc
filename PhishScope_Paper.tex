@@ -1,0 +1,75 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{PhishScope: An Explainable Hybrid Intelligence Framework for Static and Dynamic Phishing Website Analysis}
+
+\author{
+\IEEEauthorblockN{1\textsuperscript{st} Utkarsh Khandu Karale}
+\IEEEauthorblockA{\textit{M.Tech. Computer Engineering} \\
+\textit{Ashokrao Mane Group of Institutions}\\
+Kolhapur, India \\
+karaleutkarsh3696@gmail.com}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Prof. Vikas Patil}
+\IEEEauthorblockA{\textit{Department of Computer Engineering} \\
+\textit{Ashokrao Mane Group of Institutions}\\
+Kolhapur, India \\
+guide.email@example.com}
+}
+
+\maketitle
+
+\begin{abstract}
+Phishing attacks have evolved into highly sophisticated threats utilizing dynamic web content and multi-stage redirections. Traditional detection systems relying solely on static features are increasingly inadequate and often operate as uninterpretable ``black boxes.'' In this paper, we propose \textit{PhishScope}, an explainable hybrid intelligence framework that integrates multi-source static analysis (URL, HTML, Domain, SSL) with isolated browser-based dynamic behavioral execution. We employ a hybrid machine learning classification approach utilizing Random Forest and XGBoost. To establish trust and transparency, we integrate Explainable AI (XAI) techniques, specifically SHAP and LIME, to generate evidence-based risk assessments. Experimental results demonstrate that PhishScope achieves high detection accuracy while providing human-interpretable explanations for its predictions.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Phishing Detection, Explainable AI, SHAP, LIME, Hybrid Machine Learning, Cybersecurity
+\end{IEEEkeywords}
+
+\section{Introduction}
+% Introduce the problem of phishing, the limitations of current static/black-box models, and outline the contributions of PhishScope.
+Phishing remains one of the most prominent cybersecurity threats...
+
+\section{Related Work}
+% Summarize the 12 papers from the synopsis literature review here.
+Recent advancements in phishing detection have heavily utilized Machine Learning...
+
+\section{Proposed Methodology}
+% Describe Data Collection, Static Extractor, Dynamic Sandbox, and the ML Pipeline.
+\subsection{Multi-Source Static Feature Extraction}
+We extract features across four dimensions: URL, HTML, Domain, and SSL...
+
+\subsection{Dynamic Behavioral Sandbox}
+To capture runtime execution patterns...
+
+\subsection{Hybrid ML Classification}
+We propose an ensemble of Random Forest and XGBoost...
+
+\section{Explainable AI (XAI) Integration}
+% Explain how SHAP and LIME are used for Risk Scoring.
+To demystify the ``black-box'' nature of our classifier...
+
+\section{Experimental Setup and Results}
+% Detail datasets, metrics, and display results/charts.
+\subsection{Dataset}
+\subsection{Performance Metrics}
+\subsection{Results Analysis}
+
+\section{Conclusion and Future Scope}
+In this paper, we presented PhishScope...
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
