@@ -1,0 +1,31 @@
+=============================================================
+         PhishScope: Algorithms & Technologies List
+=============================================================
+
+1. HYBRID CLASSIFICATION ALGORITHMS
+-------------------------------------------------------------
+These algorithms are combined to evaluate the extracted features 
+and classify the website as "Phishing" or "Legitimate":
+* Random Forest (RF) - Handles high-dimensional static data well and prevents overfitting.
+* XGBoost (Extreme Gradient Boosting) - Highly efficient for structured data and risk scoring.
+
+2. EXPLAINABLE AI (XAI) ALGORITHMS
+-------------------------------------------------------------
+These algorithms explain the "Black-Box" ML predictions to build trust:
+* SHAP (SHapley Additive exPlanations) - Used for global and local feature attribution (showing exactly which feature contributed to the phishing score).
+* LIME (Local Interpretable Model-agnostic Explanations) - Used for comparative local explanations of individual predictions.
+
+3. FEATURE EXTRACTION & ANALYSIS ALGORITHMS (TECHNOLOGIES)
+-------------------------------------------------------------
+These power the multi-source data gathering pipeline:
+* HTML/URL Parsing (Static): BeautifulSoup, Regex-based pattern matching algorithms.
+* Dynamic Behavioral Sandbox: Selenium / Playwright (monitors JavaScript execution, DOM changes, and redirect chains at runtime).
+* Network Traffic Analysis: Packet sniffing algorithms (e.g., via Wireshark/TShark integrations) to trace network requests.
+
+4. RISK SCORING ALGORITHM
+-------------------------------------------------------------
+* Composite Risk Scoring Mechanism: A custom algorithmic formula that integrates:
+  1) The classification confidence (from RF + XGBoost).
+  2) Dynamic behavioral flags (from the isolated sandbox).
+  3) Feature weights (from SHAP/LIME).
+=============================================================
